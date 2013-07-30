@@ -57,7 +57,7 @@ namespace :deploy do
     run "cd #{deploy_to} && sudo rm -rf brewery* && sudo wget #{artifact_url}"
   end
 
-  desc "Restart Application"
+  desc "Restart my Application"
   task :restart, :roles => :app do
     run "sudo service tomcat6 restart"
   end
